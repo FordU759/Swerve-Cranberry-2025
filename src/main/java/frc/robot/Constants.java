@@ -88,13 +88,13 @@ public class Constants {
     public static final double kFreeSpeedRpm = 5676;
   }
 
-  public static final class Climber{
-    public static final int kClimberMotorId = 30;
-  }
+  //public static final class Climber{
+    //public static final int kClimberMotorId = 30;
+  //}
 
   public static class Elevator {
-    public static final int kElevatorLeftMotorId = 8;
-    public static final int kElevatorRightMotorId = 9;
+    public static final int kElevatorLeftMotorId = 2;
+    public static final int kElevatorRightMotorId = 4;
 
     public static final double kP = 0.15;
     public static final double kI = 0;
@@ -105,7 +105,7 @@ public class Constants {
     public static final double kMaxVelocity = 65;
     public static final double kMaxAcceleration = 200;
 
-    public static final int kMaxCurrent = 40;
+    public static final int kMaxCurrent = 60;
 
     public static final double kStowHeight = 0.0;
     public static final double kL2Height = 9.5;
@@ -124,7 +124,7 @@ public class Constants {
   }
 
   public static class Coral {
-    public static final int kLeftMotorId = 4;  // updated to match our architecture
+    public static final int kLeftMotorId = 9;  // updated to match our architecture
     public static final int kRightMotorId = 5; // updated to match our architecture
 
     public static final int kLaserId = 33;  //updated to match our architecture

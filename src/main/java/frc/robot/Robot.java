@@ -29,7 +29,6 @@ import frc.robot.controls.controllers.OperatorController;
 import frc.robot.simulation.Field;
 import frc.robot.subsystems.Algae;
 import frc.robot.subsystems.Coral;
-import frc.robot.subsystems.Climber;
 import frc.robot.subsystems.DriveSubsystem;
 import frc.robot.subsystems.Elevator;
 import frc.robot.subsystems.Subsystem;
@@ -61,7 +60,6 @@ public class Robot extends LoggedRobot {
   private final Coral m_coral = Coral.getInstance();
   private final Algae m_algae = Algae.getInstance();
   private final Elevator m_elevator = Elevator.getInstance();
-  private final Climber m_climber = new Climber();
 
   public final LEDs m_leds = LEDs.getInstance();
 
@@ -177,17 +175,6 @@ public class Robot extends LoggedRobot {
       m_algae.score();
     } else if (m_driverController.getWantsGroundAlgae()) {
       m_algae.groundIntake();
-    }  else if (m_driverController.getClimberUp()){
-        m_climber.climberUp();
-    } 
-    else if(m_driverController.getClimberStopUp()){
-        m_climber.stopMotor();
-    } 
-    else if(m_driverController.getClimberDown()){
-      m_climber.climberDown();      
-    } 
-    else if(m_driverController.getClimberStopDown()){
-      m_climber.stopMotor();
     } 
   
 
