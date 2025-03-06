@@ -33,15 +33,15 @@ public class Constants {
     public static final double kBackRightChassisAngularOffset = Math.PI / 2;
 
     // SPARK MAX CAN IDs
-    public static final int kFrontLeftDrivingCanId = 17;
-    public static final int kRearLeftDrivingCanId = 13;
-    public static final int kFrontRightDrivingCanId = 15;
-    public static final int kRearRightDrivingCanId = 11;
+    public static final int kFrontLeftDrivingCanId = 22;
+    public static final int kRearLeftDrivingCanId = 42;
+    public static final int kFrontRightDrivingCanId = 32;
+    public static final int kRearRightDrivingCanId = 52;
 
-    public static final int kFrontLeftTurningCanId = 10;
-    public static final int kRearLeftTurningCanId = 12;
-    public static final int kFrontRightTurningCanId = 16;
-    public static final int kRearRightTurningCanId = 14;
+    public static final int kFrontLeftTurningCanId = 21;
+    public static final int kRearLeftTurningCanId = 41;
+    public static final int kFrontRightTurningCanId = 31;
+    public static final int kRearRightTurningCanId = 51;
 
     public static final boolean kGyroReversed = false;
   }
@@ -124,11 +124,11 @@ public class Constants {
   }
 
   public static class Coral {
-    public static final int kLeftMotorId = 9;  // updated to match our architecture
-    public static final int kRightMotorId = 5; // updated to match our architecture
+    public static final int kLeftMotorId = 53;  // updated to match our architecture
+    public static final int kRightMotorId = 54; // updated to match our architecture
 
     public static final int kLaserId = 33;  //updated to match our architecture
-    public static final int kColorId = 32;  //updated to match our architecture but this isn't used
+    //public static final int kColorId = 32;  //updated to match our architecture but this isn't used
 
     public static final double kMaxCurrent = 30;
 
@@ -150,8 +150,8 @@ public class Constants {
 
   public static class Algae {
     // WRIST
-    public static final int kWristMotorId = 7;       //updated to match our architecture
-    public static final int kIntakeMotorId = 6;     //updated to match our architecture
+    public static final int kWristMotorId = 55;       //updated to match our architecture
+    public static final int kIntakeMotorId = 50;     //updated to match our architecture
 
     public static final int kWristEncoderId = 9;     //this is a DIO input for the through bore Encoder
     public static final int kMaxWristCurrent = 10;  

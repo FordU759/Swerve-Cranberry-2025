@@ -62,7 +62,7 @@ public class Elevator extends Subsystem {
     // LEFT ELEVATOR MOTOR
     mLeftMotor = new SimulatableCANSparkMax(Constants.Elevator.kElevatorLeftMotorId, MotorType.kBrushless);
     mLeftEncoder = mLeftMotor.getEncoder();
-    
+     
     mLeftPIDController = mLeftMotor.getClosedLoopController();
     mLeftMotor.configure(
         elevatorConfig,
